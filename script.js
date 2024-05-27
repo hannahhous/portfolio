@@ -1,7 +1,10 @@
 // script.js
 
-// Add any JavaScript functionality here, if needed
 document.addEventListener('DOMContentLoaded', function() {
-    console.log('Document is ready');
+  const menuButton = document.getElementById('menuButton');
+  const sideMenu = document.getElementById('sideMenu');
+
+  menuButton.addEventListener('click', function() {
+    sideMenu.classList.toggle('sideMenuShow');
   });
-  
+});
