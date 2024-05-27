@@ -59,3 +59,19 @@ a:hover {
   clip: rect(0 0 0);
   overflow: hidden;
 }
+
+
+/**********************/
+/*   MIN WIDTH 991PX  */
+/**********************/
+@media (min-width: 991px) {
+  .navItemName {
+    display: none;
+  }
+  .sideMenu:hover {
+    width: 220px;
+  }
+  .sideMenu:hover .navItemName {
+    display: block;
+  }
+}
