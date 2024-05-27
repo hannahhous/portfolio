@@ -16,8 +16,10 @@ header {
   text-align: center;
 }
 
+/* Main content */
 main {
-  padding: 1rem;
+  margin-left: 260px; /* Offset the main content to the right */
+  padding: 20px;
 }
 
 section {
@@ -189,4 +191,24 @@ a:hover {
   padding: 0 33px;
   max-width: 1140px;
   margin: 0 auto;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .menuButton {
+    display: block; /* Show the mobile menu button on smaller screens */
+  }
+
+  .sideMenu {
+    width: 100%;
+    transform: translateX(-100%);
+  }
+
+  .sideMenuShow {
+    transform: translateX(0);
+  }
+
+  main {
+    margin-left: 0;
+  }
 }
