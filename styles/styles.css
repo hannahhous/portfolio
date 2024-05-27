@@ -1,8 +1,6 @@
-/* styles.css */
-
+/* General styles */
 body {
   font-family: Arial, sans-serif;
-  line-height: 1.6;
   margin: 0;
   padding: 0;
   background-color: #f4f4f4;
@@ -16,181 +14,70 @@ header {
   text-align: center;
 }
 
-/* Main content */
-main {
-  margin-left: 260px; /* Offset the main content to the right */
-  padding: 20px;
+/* Mobile menu button */
+.menuButton {
+  display: none; /* Hide it by default */
 }
 
-section {
-  margin-bottom: 2rem;
+/* Side menu */
+.sideMenu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  background-color: #333;
+  color: #fff;
+  padding-top: 20px;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
 }
 
-h1, h2 {
-  color: #333;
+.sideMenuShow {
+  transform: translateX(0);
 }
 
-ul {
+.sideMenu .logo {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.sideMenu nav ul {
   list-style: none;
   padding: 0;
 }
 
-ul li {
-  margin-bottom: 0.5rem;
+.sideMenu nav ul li {
+  padding: 10px 20px;
 }
 
-a {
-  color: #333;
+.sideMenu nav ul li a {
+  color: #fff;
   text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-.visuallyHidden:not(:focus):not(:active) {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
-  clip: rect(0 0 0);
-  overflow: hidden;
-}
-
-
-/**********************/
-/*   MIN WIDTH 991PX  */
-/**********************/
-@media (min-width: 991px) {
-  .navItemName {
-    display: none;
-  }
-  .sideMenu:hover {
-    width: 220px;
-  }
-  .sideMenu:hover .navItemName {
-    display: block;
-  }
-}
-
-.sideMenu {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 105px;
-  height: 100vh;
-  background-color: #8444df;
-  position: fixed;
-  color: white;
-  -webkit-transition: all 0.3s ease-in;
-  transition: all 0.3s ease-in;
-  z-index: 10;
+  align-items: center;
 }
 
-.sideMenu p {
-  text-align: center;
-  padding: 30px 15px;
-  font-size: 3rem;
-  letter-spacing: 1px;
-  font-weight: 300;
-  background-color: #773dc8;
-}
-.sideMenu nav {
-  padding: 26px;
+.sideMenu nav ul li a i {
+  margin-right: 10px;
 }
 
-.sideMenu nav a {
-  padding: 13px 17px;
-  display: inline-block;
-  margin-bottom: 10px;
-  font-size: 1.3rem;
-  -webkit-transition-duration: 0.25s;
-          transition-duration: 0.25s;
-  border-radius: 6px;
-  width: 100%;
-  position: relative;
-}
-
-.sideMenu nav a span {
-  font-size: 0.75rem;
-  font-weight: 300;
-  letter-spacing: 2px;
-  -webkit-transition-duration: 0.2s;
-          transition-duration: 0.2s;
+.scrollDown {
   position: absolute;
-  left: 55px;
-  top: 18px;
-  -webkit-transition-delay: 0.1s;
-          transition-delay: 0.1s;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
 }
 
-.sideMenu nav a:hover, .sideMenu nav a:focus {
-  background-color: #9D69E5;
-  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.2);
-}
-
-.sideMenu .scrollDown {
-  height: 50px;
-  position: relative;
-  left: 35px;
-}
-
-.sideMenu .scrollDown .lni-arrow-down {
-  line-height: 1.2;
+.scrollDown i {
   font-size: 2rem;
 }
 
-.sideMenu .scrollDown .scrollDownText {
-  font-size: 0.75rem;
-  position: absolute;
-  top: 10px;
-  left: 30px;
-  font-weight: 300;
-}
-
-.hoverMenu {
-  width: 220px;
-}
-
-.menuShow {
-  display: block;
-}
-
-.menuHide {
-  display: none;
-}
-
-.sideMenuHide {
-  left: -300px;
-}
-
-.sideMenuShow {
-  left: 0;
-}
-
-.outerWrapper {
-  width: calc(100% - 90px);
-  margin-left: 90px;
-  overflow: hidden;
-}
-
-.innerWrapper {
-  padding: 0 33px;
-  max-width: 1140px;
-  margin: 0 auto;
+/* Main content */
+main {
+  margin-left: 260px; /* Offset the main content to the right */
+  padding: 20px;
 }
 
 /* Responsive design */
