@@ -178,3 +178,15 @@ a:hover {
 .sideMenuShow {
   left: 0;
 }
+
+.outerWrapper {
+  width: calc(100% - 90px);
+  margin-left: 90px;
+  overflow: hidden;
+}
+
+.innerWrapper {
+  padding: 0 33px;
+  max-width: 1140px;
+  margin: 0 auto;
+}
