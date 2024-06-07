@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <meta name="description" content="A Computer Scientist I guess." />
+  <meta name="description" content="Hannah Housand." />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Portfolio</h1>
+  </header>
+  <!-- Mobile menu button -->
+  <div id="home" class="visuallyHidden"></div>
+  <div class="menuButton" id="menuButton" tabindex="0">
+    <div class="linesContainer">
+      <span></span>
+    </div>
+  </div>
+  <!-- Side menu -->
+  <aside class="sideMenu" id="sideMenu">
+    <p class="logo">HH</p>
+    <nav>
+      <ul class="navBar">
+        <li class="homeNav">
+          <a href="#home" class="navItem">
+            <i class="lni lni-home"></i>
+            <span class="navItemName">HOME</span>
+          </a>
+        </li>
+        <li class="aboutNav">
+          <a href="#about" class="navItem">
+            <i class="lni lni-user"></i>
+            <span class="navItemName">ABOUT</span>
+          </a>
+        </li>
+        <li class="skillsNav">
+          <a href="#skills" class="navItem">
+            <i class="lni lni-code-alt"></i>
+            <span class="navItemName">SKILLS</span>
+          </a>
+        </li>
+        <li class="worksNav">
+          <a href="#works" class="navItem">
+            <i class="lni lni-briefcase"></i>
+            <span class="navItemName">WORKS</span>
+          </a>
+        </li>
+        <li class="contactNav">
+          <a href="#contact" class="navItem">
+            <i class="lni lni-phone"></i>
+            <span class="navItemName">CONTACT</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="scrollDown" id="scrollDown">
+      <i class="lni lni-arrow-down"></i>
+      <span class="navItemName scrollDownText">Scroll Down</span>
+    </div>
+  </aside>
+  <!-- Beginning of the wrapper -->
+  <div class="outerWrapper">
+    <div class="innerWrapper">
+      <!-- Header -->
+      <header>
+        <h1>Hannah Hi</h1>
+      </header>
+      <!-- Beginning of Main -->
+      <main>
+        <section id="about">
+          <h2>About Me</h2>
+          <p>Hi, I'm Hannah. I'm a Computer Scientist based in Florida.</p>
+        </section>
+        <section id="projects">
+          <h2>Projects</h2>
+          <ul>
+            <li><a href="">Project 1</a></li>
+          </ul>
+        </section>
+        <section id="contact">
+          <h2>Contact</h2>
+          <p>Email: <a href="mailto:hannahjhousand@gmail.com">hannahjhousand@gmail.com</a></p>
+        </section>
+      </main>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
