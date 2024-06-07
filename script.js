@@ -1,10 +1,8 @@
-// script.js
+document.addEventListener('DOMContentLoaded', function () {
+  var menuButton = document.getElementById('menuButton');
+  var sideMenu = document.getElementById('sideMenu');
 
-document.addEventListener('DOMContentLoaded', function() {
-  const menuButton = document.getElementById('menuButton');
-  const sideMenu = document.getElementById('sideMenu');
-
-  menuButton.addEventListener('click', function() {
+  menuButton.addEventListener('click', function () {
     sideMenu.classList.toggle('sideMenuShow');
   });
 });
