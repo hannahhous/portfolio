@@ -962,13 +962,6 @@ a {
   }
 }
 
-parentheses::before {
-  content: "("
-}
-
-parentheses::after {
-  content: ")"
-}
 
 .w3-top,
 .w3-bottom {
