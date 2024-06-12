@@ -962,11 +962,11 @@ a {
   }
 }
 
-paren::before {
+parentheses::before {
   content: "("
 }
 
-paren::after {
+parentheses::after {
   content: ")"
 }
 
