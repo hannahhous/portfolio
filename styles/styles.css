@@ -962,6 +962,14 @@ a {
   }
 }
 
+paren::before {
+  content: "("
+}
+
+paren::after {
+  content: ")"
+}
+
 .w3-top,
 .w3-bottom {
   position: fixed;
